@@ -5,13 +5,6 @@
   margin-top: 100px;
 }
 
-/* BLOCCO LEZIONI */
-#lezioni .row>.left,
-#lezioni .row>.right {
-  width: 50%;
-  float: left;
-}
-
 #lezioni .row img {
   /* per centrare orizzontalmente */
   display: block;
@@ -21,14 +14,6 @@
 
 #lezioni {
   text-align: center;
-}
-
-/* BLOCCO STEPS */
-#steps .row>.left,
-#steps .row>.central,
-#steps .row>.right {
-  float: left;
-  width: 33%;
 }
 
 #steps {
@@ -43,7 +28,6 @@
 #why .row>.first,
 #why .row>.second,
 #why .row>.third {
-  width: 100%;
   margin-top: 80px;
 }
 
@@ -70,4 +54,24 @@ img {
 
 .clear {
   clear: both;
+}
+
+
+@media screen and (max-width:700px) {
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .row {
+    width: 100%;
+
+    margin-top: 0;
+  }
+
+  #lezioni , #why {
+    background-color: rgb(242, 242, 209);
+  }
 }

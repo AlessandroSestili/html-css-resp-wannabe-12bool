@@ -156,3 +156,15 @@
         width: 100%;
     }
 }
+
+/* ROW  */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* COLUMNS */
+[class*="col-"] {
+    float: left; 
+}
